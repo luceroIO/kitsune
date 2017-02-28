@@ -2,47 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>luceroIO</title>
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <nav id="drawer" class="drawerSkin">
-    	<section class ="drawerContainer">
-
-    	</section>
+    <nav id="navArea" class="navSkin container">
     </nav>
-
     <main class="container">
-	    <header class ="box header">
-	  		<a id="menu">
-	    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-	        	<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-	    		</svg>
-	  		</a>
-	  	</header>
-	  	<article class="box line-break">
-        <hr>
+      <article class="box bioPic">
+        <img class="img-responsive" src="images/tokyo.jpg" alt="bio pic">
       </article>
-      <article class="box main-pic">
-        <img class="img-responsive" src="images/goldenGarden.jpg" alt="self portrait with mountains">
+      <article class="box myWhy">
+        <h1>G'day, I'm Michael. My websites are a Beaut!</h1>
+        <a id="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
       </article>
-    	<article class="box line-break">
-      	<hr>
-      </article>
-      <footer class="box footer">
-        <article class="footer-icon">
-          <ul><a href="http://linkedin.com"><i class="zocial-linkedin"></i></a>
-          </ul>
-        </article>
-        <article class="footer-icon">
-          <ul><a href="http://github.com"><i class="zocial-github"></i></a></ul>
-        </article>
-        <article class="footer-icon">
-          <ul><a href="http://gmail.com"><i class="zocial-email"></i></a>
-          </ul>
-        </article>
-      </footer>
     </main>
 
     <script>
@@ -51,7 +30,7 @@
        */
       var menu = document.querySelector('#menu');
       var main = document.querySelector('main');
-      var drawer = document.querySelector('#drawer');
+      var drawer = document.querySelector('#navArea');
 
       menu.addEventListener('click', function(e) {
         drawer.classList.toggle('open');
@@ -63,4 +42,3 @@
 
     </script>
   </path>
-
