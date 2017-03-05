@@ -1,0 +1,86 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+*{
+  border: 1px solid red !important;
+  margin: 0px;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  height: 100%;
+}
+.box{
+  width: 100%;
+}
+
+.header{
+  height: 40%;
+  display: flex;
+}
+
+.bioMessage{
+  height: 20%;
+}
+.footer {
+  height: 40%;
+  display: flex;
+}
+.img-responsive {
+  width: 100%;
+}
+
+.headerPic {
+  width: 60%;
+}
+
+.headerName{
+  width:40%;
+  text-align: left;
+}
+
+.bioMessage {
+  text-align: center;
+}
+.footerIcons {
+  display: block;
+  width: 40%;
+  color: green;
+  text-align: center;
+  font-size: 50px;
+
+}
+.navGlobe{
+  width: 60%;
+  color: rgb(15, 228, 241);
+  text-align: right;
+  font-size: 200px;
+  
+}
+
+
+
+
+  
+  
+  

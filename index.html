@@ -1,44 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>luceroIO</title>
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav id="navArea" class="navSkin container">
-    </nav>
-    <main class="container">
-      <article class="box bioPic">
-        <img class="img-responsive" src="images/tokyo.jpg" alt="bio pic">
-      </article>
-      <article class="box myWhy">
-        <h1>G'day, I'm Michael. My websites are a Beaut!</h1>
-        <a id="menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
-        </a>
-      </article>
-    </main>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1">
+  <title>kitsune</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class ="container">
+			<header class="box header">
+				<article class="headerPic">
+					<img class="img-responsive myPic" src="images/swiss.jpg"/>
+				</article>
+				<article class="headerName">
+					<span>Michael</span>
+				</article>
+			</header/>
+			<article class="box bioMessage">
+				<span>Hello, I'm Michael.  I love to explore the world of JavaScript and adventure in responsive design.  Tap into my world to discover more!</span>
+			</article>
+			<footer class ="box footer">
+				<article class="footerIcons">
+					<ul>
+					  <li class="fontawesome-github"></li>
+					  <li class="fontawesome-linkedin"></li>
+					</ul>
+				</article>
+				<article class="navGlobe">
+					<span class="fontawesome-globe"></span>
+				</article>
+	</section>
+</body>
+</html>
 
-    <script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('#navArea');
-
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-
-    </script>
-  </path>
