@@ -13,12 +13,13 @@
     box-sizing: border-box;
 }
 
-
+/*
 *{
   border: 1px solid red !important;
   margin: 0px;
   padding: 0;
 }
+*/
 
 ul {
   list-style: none;
@@ -33,10 +34,24 @@ ul {
 .box{
   width: 100%;
 }
-
 .header{
-  height: 40%;
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+
+.headerPic {
+  width: 50%;
+}
+.headerName {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .bioMessage{
@@ -48,26 +63,40 @@ ul {
 }
 .img-responsive {
   width: 100%;
+  height: auto;
+
 }
 
-.headerPic {
-  width: 60%;
+
+.circular {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  bottom: 0;
 }
 
-.headerName{
-  width:40%;
-  text-align: left;
+.circular img {
+  width: auto;
+  height: 100%;
+  margin-left: -133px;
 }
+
+
 
 .bioMessage {
-  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .footerIcons {
   display: block;
+  padding: 20px 80px;
   width: 40%;
   color: green;
-  text-align: center;
   font-size: 50px;
+  text-decoration: none;
 
 }
 .navGlobe{
