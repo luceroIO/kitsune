@@ -19,7 +19,7 @@
 				</article>
 			</header>
 			<article class="box bioMessage">
-				<span><br>Welcome!<br>I love to explore Javascript and adventure in human computer interaction.
+				<span><br>I love to explore Javascript and adventure in human computer interaction.
 				Tap into my world to discover more!</span>
 			</article>
 
@@ -33,9 +33,33 @@
 					 <div class="fontawesome-linkedin"></div>
 				</article>
 				<article class="navGlobe">
-					<div class="fontawesome-globe"></div>
+					<div class="fontawesome-globe menu-toggle" href="#"></div>
 				</article>
+			</footer>
 	</section>
+	<section class ="navbar">
+	</section>
+
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+
+	  	var menu = "close";
+
+	  	$('.menu-toggle').click(function(){
+	  		if(menu=="close") {
+	  				$('.navbar').css('-webkit-transform', 'translate(0,0)');
+	  				$('.container').css('-webkit-transform', 'translate(0,0)');
+	  				menu = "open";  			
+	  		}else{
+	  				$('.navbar').css('-webkit-transform', 'translate(-100%,0)');
+						$('.container').css('-webkit-transform', 'translate(0%,0)');
+						menu = "close";
+	  		}
+	  	});
+
+	  });
+	</script>
 </body>
 </html>
 
