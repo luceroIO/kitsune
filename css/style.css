@@ -125,4 +125,13 @@ div {
   overflow: hidden;
   -webkit-transform: translate(-100%,0);
   -webkit-transition: all 1s ease;
+  display: flex;
+  text-align: center;
+}
+
+.navIcon {
+  width: calc((100%)/3);
+  font-size: 5em;
+  color: white;
+
 }
